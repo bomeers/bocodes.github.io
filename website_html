@@ -1,0 +1,17 @@
+<!DOCUTYPE html>
+<html>
+<header>
+    <p> My Personal Website </p>
+</header>
+<body>
+
+    <div class="class1">
+        <h1> Hello world </h1>
+        h2> This is my personal website </h2>
+        <p> This is a paragraph inside my website </p>
+        <p><a href="www.google.com"> This is a link</a></p>
+    </div>
+
+
+</body>
+</html>
