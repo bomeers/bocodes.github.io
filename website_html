@@ -1,17 +1,22 @@
 <!DOCUTYPE html>
 <html>
 <head>
-    <p> My Personal Website </p>
+    <title> My Personal Website </title>
 </head>
 <body>
 
-    <div class="class1">
+    <div class="content">
         <h1> Hello world </h1>
         h2> This is my personal website </h2>
         <p> This is a paragraph inside my website </p>
         <p><a href="www.google.com"> This is a link</a></p>
     </div>
 
+    <div class="list">
+        <ul>
+            <li>list item 1</li>
+            <li> list item 2 </li>
+        </ul>
 
 </body>
 </html>
