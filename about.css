@@ -48,3 +48,19 @@ body {
 	color: lightskyblue;
 	text-decoration: none;
 }
+
+/* Body */
+
+#body ul {
+	list-style-type: none;
+}
+
+#body ul img {
+	width: 150px;
+}
+
+#body ul li {
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+}
