@@ -49,9 +49,6 @@ body {
 
 /* Hero Image */
 #hero {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
 	margin: 0px;
-	height: 500px;
+	height: 100%;
 }
