@@ -51,8 +51,15 @@ body {
 
 /* Body */
 
+#body {
+	margin: auto;
+	width: 75%;
+}
+
 #body ul {
 	list-style-type: none;
+	vertical-align: middle;
+	
 }
 
 #body ul img {
