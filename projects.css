@@ -51,15 +51,19 @@ body {
 
 /* Projects */
 
-.projects {
+.projects-list {
 	position: relative;
-	margin: auto;
-	width: 75%;
+	list-style-type: none;
+	text-decoration: none;
+	text-align: center;
+	left: -20px;
 }
 
-.projects td {
-	padding: 25px;
+.projects-list li {
+	display: inline-block;
+	padding: 15px;
+	margin-bottom: 10px;
 	background-color: white;
 	border-radius: 3px;
-	text-align: center;
+	font-family: 'Nunito', sans-serif;
 }
