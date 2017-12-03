@@ -53,10 +53,17 @@ body {
 
 /* Contact Me */
 
+.sending{
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+	color: white;
+}
+
 .contact-me {
 	position: relative;
 	margin: auto;
 	top: 100px;
+	vertical-align: center;
 }
 
 .contact-me input[type="text"] {
