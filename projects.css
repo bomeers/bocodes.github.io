@@ -51,7 +51,7 @@ body {
 
 /* Projects */
 
-.projects-list {
+/*.projects-list {
 	position: relative;
 	list-style-type: none;
 	text-decoration: none;
@@ -75,4 +75,28 @@ body {
 	height: 250px;
 	border-radius: 3px;
 	object-fit: cover;
+}*/
+
+/* trying table again */
+
+.project-table {
+	margin: auto;
+	width: 90%;
+}
+
+.project-table td {
+	padding: 10px;
+}
+
+.project-table img {
+	filter: brightness(100%);
+	-webkit-transition: filter 0.2s;
+	transition: filter 0.2s;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.project-table img:hover {
+	filter: brightness(40%);
 }
