@@ -54,9 +54,11 @@ body {
 /* Table */
 
 .table-bio {
+	position: relative;
 	margin: auto;
 	padding-left: 200px;
 	padding-right: 200px;
+	top: 100px;
 }
 
 .table-bio img {
