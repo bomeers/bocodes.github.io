@@ -50,3 +50,14 @@ body {
 	color: lightskyblue;
 	text-decoration: none;
 }
+
+/* Contact Me */
+
+.contact-me {
+	margin: auto;
+}
+
+.contact-me input[type="text"] {
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
