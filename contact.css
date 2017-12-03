@@ -63,3 +63,23 @@ body {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 }
+
+.contact-me input {
+	border-radius: 2px;
+	border: 0px;
+	padding: 10px;
+}
+
+.send {
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+	color: black;
+	background-color: lightgrey;
+	transition: color 0.2s, background-color 0.2s;
+	-webkit-transition: color 0.2s, background-color 0.2s;
+}
+
+.send:hover {
+	color: white;
+	background-color: grey;
+}
