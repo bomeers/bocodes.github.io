@@ -50,3 +50,15 @@ body {
 	color: lightskyblue;
 	text-decoration: none;
 }
+
+/* explanation */
+
+p {
+	position: relative;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+	margin: auto;
+	text-align: center;
+	top: 200px;
+}
