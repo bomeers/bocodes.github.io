@@ -54,7 +54,9 @@ body {
 /* Contact Me */
 
 .contact-me {
+	position: relative;
 	margin: auto;
+	top: 100px;
 }
 
 .contact-me input[type="text"] {
