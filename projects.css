@@ -13,6 +13,10 @@ body {
 	margin: 0px;
 }
 
+.active-nav {
+	color: lightskyblue !important;
+}
+
 .nav img {
 	position: relative;
 	width: 150px;
