@@ -9,42 +9,57 @@ body {
 }
 
 /* Navigation Bar */
-#nav {
+.nav {
 	margin: 0px;
 }
 
-#nav img {
+.nav img {
 	position: relative;
 	width: 150px;
 	top: 50px;
 }
 
-#nav ul {
+.nav ul {
 	position: relative;
 	top: -100px;
 	padding: 20px;
 	text-align: center;
 }
 
-#nav-list {
+.nav-list {
 	position: relative;
 	margin: 0;
 }
 
-#nav ul li {
+.nav ul li {
 	list-style-type: none;
 	display: inline-block;
 	padding: 15px;
 	font-family: 'Nunito', sans-serif;
 }
 
-#nav li a {
+.nav li a {
 	color: white;
 	text-decoration: none;
 	font-size: 25px;
 }
 
-#nav li a:hover {
+.nav li a:hover {
 	color: lightskyblue;
 	text-decoration: none;
+}
+
+/* Projects */
+
+.projects {
+	position: relative;
+	margin: auto;
+	width: 75%;
+}
+
+.projects td {
+	padding: 25px;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
 }
