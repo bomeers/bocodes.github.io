@@ -79,7 +79,3 @@ body {
 .project-table img:hover {
 	filter: brightness(40%);
 }
-
-.white {
-	background-color: white;
-}
