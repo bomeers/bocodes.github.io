@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	overflow: hidden;
 	background-color: dimgrey;
-	background-image: url("Images/hero.png");
+	background-image: url("../Images/hero.png");
 	background-repeat: no-repeat;
 	background-position: top center;
 }

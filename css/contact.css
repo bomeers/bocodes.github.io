@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	overflow: hidden;
 	background-color: dimgrey;
-	background-image: url("Images/hero.png");
+	background-image: url("../Images/hero.png");
 	background-repeat: no-repeat;
 	background-position: top center;
 }
@@ -55,26 +55,42 @@ body {
 	text-decoration: none;
 }
 
-/* Table */
+/* Contact Me */
 
-.table-bio {
-	position: relative;
-	margin: auto;
-	padding-left: 200px;
-	padding-right: 200px;
-	top: 100px;
-	vertical-align: center;
-}
-
-.table-bio img {
-	height: 200px;
-	width: auto;
-}
-
-.table-bio td {
-	color: white;
+.sending{
 	font-family: 'Nunito', sans-serif;
 	font-size: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
+	color: white;
+}
+
+.contact-me {
+	position: relative;
+	margin: auto;
+	top: 60px;
+	vertical-align: center;
+}	
+
+.contact-me input[type="text"] {
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+
+.contact-me input {
+	border-radius: 2px;
+	border: 0px;
+	padding: 10px;
+}
+
+.send {
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+	color: black;
+	background-color: lightgrey;
+	transition: color 0.2s, background-color 0.2s;
+	-webkit-transition: color 0.2s, background-color 0.2s;
+}
+
+.send:hover {
+	color: white;
+	background-color: grey;
 }
