@@ -1,8 +1,7 @@
 /* Body Width */
 body {
-	margin: 0;
+	margin: 0px;
 	overflow-x: hidden;
-	overflow-y: scroll;
 	background-color: dimgrey;
 	background-image: url("../Images/hero.png");
 	background-repeat: no-repeat;
@@ -12,6 +11,9 @@ body {
 /* Navigation Bar */
 .nav {
 	margin: 0px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
 }
 
 .active-nav {
@@ -59,9 +61,11 @@ body {
 /* Projects */
 
 .project-table {
+	position: relative;
 	margin: auto;
 	width: 90%;
 	border-spacing: 20px;
+	top: 200px;
 }
 
 .project-frame {
@@ -82,7 +86,7 @@ body {
 	text-align: center;
 	color: white;
 	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .project-table td {
@@ -93,26 +97,48 @@ body {
 
 /* Project Backgrounds */
 
+.before::before {
+  	content: '';
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+	top: 0px;
+	left: 0px;
+  	background-color: rgba(0, 0, 0, .5);
+  	opacity: 0;
+  	transition: opacity 0.2s;
+}
+
+.before:hover::before {
+  opacity: 1;
+}
+
 #chili {
+	position: relative;
 	background-image: url(../Images/Chili.jpg);
 }
 
 #basf {
+	position: relative;
 	background-image: url(../Images/basf.jpg);
 }
 
 #stonehaven {
+	position: relative;
 	background-image: url(../Images/stonehaven.png);
 }
 
 #minti {
+	position: relative;
 	background-image: url(../Images/minti.jpg);
 }
 
 #brainwashed {
+	position: relative;
 	background-image: url(../Images/brainwashed.png);
 }
 
 #pentax {
+	position: relative;
 	background-image: url(../Images/pentax.png);
 }

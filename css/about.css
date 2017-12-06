@@ -1,7 +1,7 @@
 /* Body Width */
 body {
-	margin: 0;
-	overflow: hidden;
+	margin: 0px;
+	overflow-x: hidden;
 	background-color: dimgrey;
 	background-image: url("../Images/hero.png");
 	background-repeat: no-repeat;
@@ -11,6 +11,9 @@ body {
 /* Navigation Bar */
 .nav {
 	margin: 0px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
 }
 
 .active-nav {
@@ -62,7 +65,7 @@ body {
 	margin: auto;
 	padding-left: 200px;
 	padding-right: 200px;
-	top: 100px;
+	top: 300px;
 	vertical-align: center;
 }
 

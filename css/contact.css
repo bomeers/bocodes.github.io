@@ -1,7 +1,7 @@
 /* Body Width */
 body {
-	margin: 0;
-	overflow: hidden;
+	margin: 0px;
+	overflow-x: hidden;
 	background-color: dimgrey;
 	background-image: url("../Images/hero.png");
 	background-repeat: no-repeat;
@@ -11,7 +11,9 @@ body {
 /* Navigation Bar */
 .nav {
 	margin: 0px;
-	height: 100px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
 }
 
 .active-nav {
@@ -67,8 +69,8 @@ body {
 .contact-me {
 	position: relative;
 	margin: auto;
-	top: 60px;
 	vertical-align: center;
+	top: 300px;
 }	
 
 .contact-me input[type="text"] {

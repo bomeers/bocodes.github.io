@@ -1,16 +1,16 @@
 /* Body Width */
 body {
-	margin: 0px;;
-	padding: 0px;
+	margin: 0px;
 	overflow-x: hidden;
-	overflow-y: scroll;
 	background-color: dimgrey;
 }
 
 /* Navigation Bar */
 .nav {
 	margin: 0px;
-	height: 100px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
 }
 
 .nav img {
@@ -59,7 +59,7 @@ body {
 	font-size: 45px;
 	text-align: center;
 	padding-bottom: 100px;
-	padding-top: 100px;
+	padding-top: 200px;
 }
 
 .projects {
