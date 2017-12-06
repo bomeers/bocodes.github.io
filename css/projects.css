@@ -1,7 +1,8 @@
 /* Body Width */
 body {
 	margin: 0;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	background-color: dimgrey;
 	background-image: url("../Images/hero.png");
 	background-repeat: no-repeat;
