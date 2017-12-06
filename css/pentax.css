@@ -63,17 +63,15 @@ body {
 }
 
 .projects {
-	margin: auto;
+	margin: 0px;
 	width: 100%;
 }
-
 .projects td {
 	width: 50%;
 }
 
 .frame {
-	padding-top: 250px;
-	padding-bottom: 250px;
+	margin: 0px;
 	color: white;
 	font-family: 'Quicksand', sans-serif;
 }
@@ -82,7 +80,11 @@ body {
 
 
 .description {
-	padding: 50px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin: 0px;
 }
 
 .image-1 {
