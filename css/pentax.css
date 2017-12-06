@@ -63,15 +63,17 @@ body {
 }
 
 .projects {
-	margin: 0px;
+	margin: auto;
 	width: 100%;
 }
+
 .projects td {
 	width: 50%;
 }
 
 .frame {
-	margin: 0px;
+	padding-top: 250px;
+	padding-bottom: 250px;
 	color: white;
 	font-family: 'Nunito', sans-serif;
 }
@@ -80,11 +82,7 @@ body {
 
 
 .description {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-right: 50px;
-	padding-left: 50px;
-	margin: 0px;
+	padding: 50px;
 }
 
 .image-1 {
