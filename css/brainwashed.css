@@ -35,7 +35,7 @@ body {
 	list-style-type: none;
 	display: inline-block;
 	padding: 15px;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .nav li a {
@@ -55,7 +55,7 @@ body {
 
 #Title {
 	color: white;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 45px;
 	text-align: center;
 	padding-bottom: 100px;
@@ -75,7 +75,7 @@ body {
 	padding-top: 250px;
 	padding-bottom: 250px;
 	color: white;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 /* Images & Descriptions */

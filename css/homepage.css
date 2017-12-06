@@ -42,7 +42,7 @@ body {
 	list-style-type: none;
 	display: inline-block;
 	padding: 15px;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .nav li a {
@@ -62,7 +62,7 @@ body {
 
 p {
 	color: white;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 30px;
 	text-align: center;
 }
