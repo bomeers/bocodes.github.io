@@ -3,6 +3,8 @@ body {
 	margin: 0px;
 	overflow-x: hidden;
 	background-color: dimgrey;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
 }
 
 /* Navigation Bar */
@@ -35,7 +37,6 @@ body {
 	list-style-type: none;
 	display: inline-block;
 	padding: 15px;
-	font-family: 'Quicksand', sans-serif;
 }
 
 .nav li a {
@@ -54,8 +55,6 @@ body {
 /* Project Images */
 
 #Title {
-	color: white;
-	font-family: 'Quicksand', sans-serif;
 	font-size: 45px;
 	text-align: center;
 	padding-bottom: 100px;
@@ -71,15 +70,38 @@ body {
 	width: 50%;
 }
 
-.frame {
+.clickme {
+	display: block;
+	width: 100%;
 	padding-top: 250px;
 	padding-bottom: 250px;
-	color: white;
-	font-family: 'Quicksand', sans-serif;
+}
+
+/* Lightbox */
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	width: 90%;
+	margin-top: 20px;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
 }
 
 /* Images & Descriptions */
-
 
 .description {
 	padding: 50px;
