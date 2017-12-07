@@ -92,8 +92,7 @@ body {
 }
 
 .lightbox img {
-	width: 90%;
-	margin-top: 20px;
+	height: 100%;
 }
 
 .lightbox:target {
