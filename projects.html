@@ -4,56 +4,77 @@
 	<title>Bo Meers Portfolio - Projects</title>
 	<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
     <link href="css/projects.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit-icons.min.js"></script>
 </head>
 <body>
 	
+	<!-- Background Image !-->
+	
+		<div class="uk-position-center" style="height: 100%; width: 100%; margin: 0px; padding: 0px; background-image: url(Images/hero.png); background-position: center; background-size: cover;">
+		</div>
+	
 	<!-- Navigation Bar !-->
 	
-	<div class="nav">
-        <ul>
-        	<div class="nav-list">
-        	<li><a href="index.html">Home</a></li>
-        	<li><a class="active-nav" href="projects.html">Projects</a></li>
-			<li><img src="Images/logo.png" alt="Bo Meers Logo"></li>
-        	<li><a href="about.html">About</a></li>
-        	<li><a href="contact.html">Contact</a></li>
-		  	</div>
-   	  	</ul>
-	</div>
+	<nav class="uk-navbar-container uk-margin uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-center">
+
+        <div class="uk-navbar-center-left"><div>
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html" style="color: white; font-size: 20px;">Home</a></li>
+                <li><a href="projects.html" style="color: cyan; font-size: 20px;">Projects</a>
+                    <!--<div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div> !-->
+                </li>
+            </ul>
+        </div></div>
+        <a class="uk-navbar-item uk-logo" href="index.html"><img src="Images/logo.png" style="width:100px;"/></a>
+        <div class="uk-navbar-center-right"><div>
+            <ul class="uk-navbar-nav">
+                <li><a href="about.html" style="color: white; font-size: 20px;">About</a></li>
+				<li><a href="contact.html" style="color: white; font-size: 20px;">Connect</a></li>
+            </ul>
+        </div></div>
+
+    </div>
+	</nav>
 
 	<!-- Projects !-->
 	
-	<table class="project-table">
-		<tr>
-			<!-- Project 1 !-->
-			<td id="chili" class="before">
-				<a href="Chili Cook-Off.html"><div class="project-frame">Chili Cook-Off</div></a>
-			</td>
-			<!-- Project 2 !-->
-			<td id="basf" class="before">
-				<a href="BASF.html"><div class="project-frame">BASF Rebranding</div></a>
-			</td>
-			<!-- Project 3 !-->
-			<td id="stonehaven" class="before">
-				<a href="stonehaven.html"><div class="project-frame">Stonehaven Toffee</div></a>
-			</td>
-		</tr>
-		<tr>
-			<!-- Project 4 !-->
-			<td id="minti" class="before">
-				<a href="minti.html"><div class="project-frame">Minti Typeface</div></a>
-			</td>
-			<!-- Project 5 !-->
-			<td id="brainwashed" class="before">
-				<a href="brainwashed.html"><div class="project-frame">Brainwashed Trailer</div></a>
-			</td>
-			<!-- Project 6 !-->
-			<td id="pentax" class="before">
-				<a href="pentax.html"><div class="project-frame">Pentax Camera</div></a>
-			</td>
-		</tr>
-	</table>
+	<div class="uk-position-center" style="width: 90%; margin: auto;">
+		<div class="uk-grid-match uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid style="height">
+    	<div>
+        	<a href="BASF.html" style="text-decoration: none;"><div class="uk-card uk-card-default uk-card-body" style="background-image:url(Images/basf.jpg); background-size: cover; background-position: center; padding-top: 125px; padding-bottom: 125px; color: white;">BASF</div></a>
+    	</div>
+    	<div>
+        	<a href="Chili Cook-Off.html" style="text-decoration: none;"><div class="uk-card uk-card-default uk-card-body" style="background-image:url(Images/Chili.jpg); background-size: cover; background-position: center; padding-top: 125px; padding-bottom: 125px; color: white;">Chili Cook-Off</div></a>
+    	</div>
+    	<div>
+        	<a href="stonehaven.html" style="text-decoration: none;"><div class="uk-card uk-card-default uk-card-body" style="background-image:url(Images/stonehaven.png); background-size: cover; background-position: center; padding-top: 125px; padding-bottom: 125px; color: white;">Stonehaven</div></a>
+    	</div>
+		</div>
+		<div class="uk-grid-match uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid style="height">
+    	<div>
+        	<a href="minti.html" style="text-decoration: none;"><div class="uk-card uk-card-default uk-card-body" style="background-image:url(Images/minti.jpg); background-size: cover; background-position: center; padding-top: 125px; padding-bottom: 125px; color: white;">Minti Typeface</div></a>
+    	</div>
+    	<div>
+        	<a href="brainwashed.html" style="text-decoration: none;"><div class="uk-card uk-card-default uk-card-body" style="background-image:url(Images/brainwashed.png); background-size: cover; background-position: center; padding-top: 125px; padding-bottom: 125px; color: white;">Brainwashed</div></a>
+    	</div>
+    	<div>
+        	<a href="pentax.html" style="text-decoration: none;"><div class="uk-card uk-card-default uk-card-body" style="background-image:url(Images/pentax.png); background-size: cover; background-position: center; padding-top: 125px; padding-bottom: 125px; color: white;">Pentax Camera</div></a>
+    	</div>
+		</div>
+	</div>
 		
 </body>
 </html>
