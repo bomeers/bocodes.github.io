@@ -1,62 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Projects - Chili Cook-Off</title>
-	<title>Bo Meers Portfolio - Projects</title>
-	<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
-    <link href="css/Chili Cook-Off.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <title>Bo Meers Portfolio</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+    <link href="css/about.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit-icons.min.js"></script>
 </head>
 <body>
-
+	
+	<!-- Background Color !-->
+	
+	<div class="uk-position-center" style="height: 100%; width: 100%; margin: 0px; padding: 0px; background-color: grey; background-position: center; background-size: cover; z-index: -1">
+		</div>
+	
 	<!-- Navigation Bar !-->
 	
-	<div class="nav">
-        <ul>
-        	<div class="nav-list">
-        	<li><a href="index.html">Home</a></li>
-        	<li><a href="projects.html">Projects</a></li>
-			<li><img src="Images/logo.png" alt="Bo Meers Logo"></li>
-        	<li><a href="about.html">About</a></li>
-        	<li><a href="contact.html">Contact</a></li>
-		  	</div>
-   	  	</ul>
+	<nav class="uk-navbar-container uk-margin uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-center">
+
+        <div class="uk-navbar-center-left"><div>
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html" style="color: white; font-size: 20px;">Home</a></li>
+                <li><a href="projects.html" style="color: white; font-size: 20px;">Projects</a>
+                    <!--<div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div> !-->
+                </li>
+            </ul>
+        </div></div>
+        <a class="uk-navbar-item uk-logo" href="index.html"><img src="Images/logo.png" style="width:100px;"/></a>
+        <div class="uk-navbar-center-right"><div>
+            <ul class="uk-navbar-nav">
+                <li><a href="about.html" style="color: white; font-size: 20px;">About</a></li>
+				<li><a href="contact.html" style="color: white; font-size: 20px;">Connect</a></li>
+            </ul>
+        </div></div>
+
+    </div>
+	</nav>
+	
+	<!-- Project Details !-->
+	
+	<h1 style="color: white; text-align: center; padding-bottom: 100px; padding-top: 75px;">Chili Cook-Off Shirt</h1>
+	
+	<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+		<div class="uk-card-media-left uk-cover-container">
+			<div uk-lightbox uk-cover><a href="Images/minti.jpg"><img src="Images/minti.jpg" alt=""></a></div>
+			<canvas width="600" height="400"></canvas>
+		</div>
+		<div>
+			<div class="uk-card-body">
+				<h3 class="uk-card-title">Media Left</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+		<div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+			<div uk-lightbox uk-cover><a href="Images/Minti/img1.png"><img src="Images/Minti/img1.png" alt=""></a></div>
+			<canvas width="600" height="400"></canvas>
+		</div>
+		<div>
+			<div class="uk-card-body">
+				<h3 class="uk-card-title">Media Right</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+			</div>
+		</div>
 	</div>
 	
-	<!-- Projects !-->
 	
-	<h1 id="Title">This is the Project Title</h1>
-	
-	<table class="projects">
-		
-		<!-- Image / Title !-->
-		<tr>
-			<td class="image-1">
-				<a href="#img1" style="opacity: 0;" class="clickme">Click Me</a>
-				<a href="#_" id="img1" class="lightbox"><img src="Images/Chili.jpg"/></a>
-			</td>
-			
-			<td class="description">
-				<div class="frame">
-				<h1>This is the Title</h1>
-				<p>This is the description. The description can be very long and take up many paragraphs of space.</p></div>
-			</td>
-		</tr>
-		
-		<!-- Title / Image !-->
-		<tr>
-			<td class="description">
-				<div class="frame">
-				<h1>This is the Title</h1>
-				<p>This is the description. The description can be very long and take up many paragraphs of space.</p></div>
-			</td>
-			
-			<td class="image-1">
-				<a href="#img2" style="opacity: 0;" class="clickme">Click Me</a>
-			</td>
-		</tr>
-		
-	</table>
-
 </body>
 </html>
