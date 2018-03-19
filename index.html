@@ -14,41 +14,38 @@
 </head>
 <body>
 	
+	
 	<!-- Background Image !-->
 	
 	<div class="uk-position-center" style="height: 100%; width: 100%; margin: 0px; padding: 0px; background-image: url(Images/Assets/hero2.jpeg); background-position: center; background-size: cover; background-color: dimgray; z-index: -1;">
 	</div>
    
+	
 	<!-- Navigation Bar !-->
 	
-	<nav class="uk-navbar-container uk-margin uk-navbar-transparent" uk-navbar>
-    <div class="uk-navbar-center">
+	<div class="uk-offcanvas-content">
 
-        <div class="uk-navbar-center-left"><div>
-            <ul class="uk-navbar-nav">
-                <li><a href="index.html" style="color: cyan; font-size: 20px;">Home</a></li>
-                <li><a href="projects.html" style="color: white; font-size: 20px;">Projects</a>
-                    <!--<div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div> !-->
-                </li>
-            </ul>
-        </div></div>
-        <a class="uk-navbar-item uk-logo" href="index.html"><img src="Images/Assets/logo.png" style="width:100px;"/></a>
-        <div class="uk-navbar-center-right"><div>
-            <ul class="uk-navbar-nav">
-                <li><a href="about.html" style="color: white; font-size: 20px;">About</a></li>
-				<li><a href="contact.html" style="color: white; font-size: 20px;">Connect</a></li>
-            </ul>
-        </div></div>
+    <button class="uk-button uk-button-default uk-margin-small-right uk-position-fixed" type="button" uk-toggle="target: #offcanvas-slide" style="border-style: none; color: white; margin-top: 10px; z-index: 99"><span class="uk-margin-small-right" uk-icon="icon: table"></span></button>
 
+    <div id="offcanvas-slide" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+			<a href="index.html"><h3 style="color: cornflowerblue">Home</h3></a>
+			
+			<a href="projects.html"><h3>Projects</h3></a>
+			
+			<a href="about.html"><h3>About</h3></a>
+			
+			<a href="contact.html"><h3>Connect</h3></a>
+
+        </div>
     </div>
-	</nav>
+		
+	<div class="uk-position-top-center uk-position-fixed" style="z-index: 99;"><a href="index.html"><img src="Images/Assets/logo.png" style="width:auto; height:70px;"/></a></div>
 	
+		
 	<!-- explanation !-->
 	
 	<div class="uk-position-center">
@@ -64,5 +61,7 @@
 	
 	<div class="uk-position-center" style="z-index: 1; color: white; font-size: 12px; padding-top: 400px; text-align: center;">Disclaimer: I do not own the background images nor am I profiting off of them.</div>
 	
+	</div>
+		
 </body>
 </html>
