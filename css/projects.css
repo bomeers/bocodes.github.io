@@ -2,4 +2,125 @@
 body {
 	margin: 0px;
 	overflow-x: hidden;
+	background-color: black;
+}
+
+/* Contact Bar */
+
+.contact-container {
+	height: 35px;
+	background: #1B3440;
+	border-bottom: 1px solid;
+}
+
+.contact {
+	padding-top: 5px;
+	padding-left: 100px;
+	padding-right: 120px;
+	list-style-type: none;
+}
+
+.contact ul a {
+	text-decoration: none;
+}
+
+.contact li:hover {
+	color: white;
+}
+
+.contact-left {
+	display: inline;
+	padding-right: 5px;
+	text-align: left;
+}
+
+.contact-right {
+	display: inline;
+	padding-left: 10px;
+	text-align: right;
+	float: right;
+}
+
+/* Nav Bar */
+
+.navbar {
+	position: relative;
+	z-index: 980;
+	background-color: #1B3440 !important;
+}
+
+#nav-logo {
+	padding-left: 120px;
+}
+
+#nav-logo a{
+	margin: 0;
+	padding-left: 0px;
+}
+
+#nav-logo img {
+	height: 60px;
+	width: auto;
+}
+
+#nav-categories {
+	padding-right: 120px;
+}
+
+#nav-categories ul li {
+	float: right;
+	list-style-type: none;
+	padding-left: 10px;
+}
+
+#nav-categories {
+	padding-top: 17px;
+}
+
+#nav-categories a {
+	text-decoration: none;
+	color: #C3C3C3;
+}
+
+#nav-categories a:hover {
+	color: #fff;
+}
+
+/* Design Categories */
+
+.categories {
+	height: 350px;
+	background-color: #B4D6C6;
+}
+
+.categories-container {
+	padding-left: 120px;
+	padding-right: 120px;
+	margin: auto;
+	height: 100%;
+}
+
+.categories-container table {
+	width: 100%; 
+	text-align: center;
+	height: 100%;
+}
+
+.categories-container tr {
+}
+
+.categories-container td {
+	border: 2px solid #fff;
+	width: 20%;
+}
+
+/* Projects */
+
+.projects {
+	float: left;
+	width: 25%;
+	padding-bottom: 25%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
