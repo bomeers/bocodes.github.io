@@ -91,27 +91,21 @@ body {
 .categories {
 	height: 350px;
 	background-color: #B4D6C6;
+	position: relative;
 }
 
 .categories-container {
-	padding-left: 120px;
-	padding-right: 120px;
-	margin: auto;
-	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.categories-container table {
-	width: 100%; 
-	text-align: center;
-	height: 100%;
-}
-
-.categories-container tr {
-}
-
-.categories-container td {
-	border: 2px solid #fff;
-	width: 20%;
+.category {
+	border: 1px solid white;
+	display: inline-block;
+	width: 130px;
+	height: 110px;
 }
 
 /* Projects */
