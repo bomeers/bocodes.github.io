@@ -32,6 +32,7 @@ body {
 	display: inline;
 	padding-right: 5px;
 	text-align: left;
+	padding-left: 0px;
 }
 
 .contact-right {
@@ -94,17 +95,36 @@ body {
 	position: relative;
 }
 
+.categories ul li {
+	text-align: center;
+	list-style-type: none;
+	display: inline;
+}
+
+.categories ul {
+	text-align: center;
+	padding-left: 0px;
+	vertical-align: middle;
+	line-height: 350px;
+}
+
+.categories li {
+	border: 1px solid white;
+	padding: 100px;
+}
+
 .categories-container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	margin: auto;
 }
 
 .category {
 	border: 1px solid white;
 	display: inline-block;
-	width: 130px;
+	width: 200px;
 	height: 110px;
 }
 
