@@ -5,6 +5,14 @@ body {
 	background-color: #242842;
 }
 
+.background {
+	position: fixed;
+	widht: auto;
+	height: auto;
+	background-color: #242842;
+	overflow: auto;
+}
+
 
 /* Nav Bar */
 
@@ -60,11 +68,11 @@ body {
 }
 
 
-/* Projects */
+/* Project Buttons */
 
 .filterDiv {
 	float: left;
-	background-color: #2196F3;
+	background-color: #242842;
 	color: #ffffff;
 	width: 25%;
 	margin: 0px;
@@ -104,11 +112,44 @@ body {
 }
 
 
+/* Projects */
+
+#unify {
+	background-image: url(../Images/Unify/UNIFY.png);
+	-webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+}
+#unify:hover {
+	background-image: url(../Images/Unify/UNIFY-hover.png);
+}
+
+
+#ta {
+	background-image: url(../Images/TA/TA.png);
+	-webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+}
+#ta:hover {
+	background-image: url(../Images/TA/TA-hover.png);
+}
+
+
+#grimco {
+	background-image: url(../Images/Grimco/GRIMCO.png);
+	-webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+}
+#grimco:hover {
+	background-image: url(../Images/Grimco/GRIMCO-hover.png);
+}
+
+
 /* Contact Bar */
 
 .contact-container {
 	background: #242842;
-	
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .contact {
