@@ -35,30 +35,34 @@
 	</div>
 	
 	
-	<!-- Categories !-->
-	
-	<div class="categories">
-		<ul>
-			<li><a style="background-image: url(Images/Assets/design.png)"></a></li>
-			<li><a style="background-image: url(Images/Assets/design.png)"></a></li>
-			<li><a style="background-image: url(Images/Assets/design.png)"></a></li>
-			<li><a style="background-image: url(Images/Assets/design.png)"></a></li>
-			<li><a style="background-image: url(Images/Assets/design.png)"></a></li>
-		</ul>
-	</div>
-	
-	
 	<!-- Projects !-->
 	
-	<div class="projects" style="background-image: url(Images/Unify/UNIFY.png)"></div>
-	<div class="projects" style="background-image: url(Images/TA/TA.png)"></div>
-	<div class="projects" style="background-image: url(Images/Grimco/GRIMCO.png)"></div>
-	<div class="projects" style="background-image: url(Images/RML/RML.png)"></div>
-	
-	<div class="projects" style="background-image: url(Images/Crossings/CROSSINGS-fix.png)"></div>
-	<div class="projects" style="background-image: url(Images/L&T/LT.png)"></div>
-	<div class="projects" style="background-image: url(Images/BASF/basf.jpg)"></div>
-	<div class="projects" style="background-image: url(Images/Chili/Chili.jpg)"></div>
+	<div id="myBtnContainer" class="buttonContainer">
+		<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+		<button class="btn" onclick="filterSelection('design')"> Graphic Design</button>
+		<button class="btn" onclick="filterSelection('motion')"> Motion Design</button>
+		<button class="btn" onclick="filterSelection('web')"> Web Design</button>
+		<button class="btn" onclick="filterSelection('video')"> Video Editing</button>
+		<button class="btn" onclick="filterSelection('photo')"> Photography</button>
+	</div>
+
+	<div class="container">
+		<div class="filterDiv motion design video" style="background-image: url(Images/Unify/UNIFY.png)"></div>
+		
+		<div class="filterDiv motion video" style="background-image: url(Images/TA/TA.png)"></div>
+		
+		<div class="filterDiv motion video" style="background-image: url(Images/Grimco/GRIMCO.png)"></div>
+		
+		<div class="filterDiv motion video" style="background-image: url(Images/RML/RML.png)"></div>
+		
+		<div class="filterDiv motion" style="background-image: url(Images/Crossings/CROSSINGS-fix.png)"></div>
+		
+		<div class="filterDiv motion video" style="background-image: url(Images/L&T/LT.png)"></div>
+		
+		<div class="filterDiv design" style="background-image: url(Images/BASF/basf.jpg)"></div>
+		
+		<div class="filterDiv design" style="background-image: url(Images/Chili/Chili.jpg)"></div>
+	</div>
 	
 	
 	<!-- Contact Info !-->
@@ -78,6 +82,52 @@
 	</div>
 	
 	
+	<!-- Scripts !-->
+	
+	<script>
+		filterSelection("all")
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("filterDiv");
+		  if (c == "all") c = "";
+		  for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			}
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		  });
+		}
+	</script>
 	
 </body> 
 </html>

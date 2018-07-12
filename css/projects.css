@@ -1,56 +1,17 @@
 /* Body Width */
-body html{
+body {
 	margin: 0px;
 	overflow-x: hidden;
+	background-color: #242842;
 }
 
-<<<<<<< HEAD
-/* Contact Bar */
-
-.contact-container {
-	height: 35px;
-	background: #133046;
-	border-bottom: 1px solid;
-}
-
-.contact {
-	padding-top: 5px;
-	padding-left: 100px;
-	padding-right: 120px;
-	list-style-type: none;
-}
-
-.contact ul a {
-	text-decoration: none;
-	color: dimgrey;
-}
-
-.contact li:hover {
-	color: white;
-}
-
-.contact-left {
-	display: inline;
-	padding-right: 10px;
-	text-align: left;
-	padding-left: 0px;
-}
-
-.contact-right {
-	display: inline;
-	padding-left: 15px;
-	text-align: right;
-	float: right;
-}
-=======
->>>>>>> 27b3e1360a0ea3b9f28f344734f0c61dffd6839b
 
 /* Nav Bar */
 
 .navbar {
 	position: relative;
 	z-index: 980;
-	background-color: #1B3440 !important;
+	background-color: #242842 !important;
 }
 
 #nav-logo {
@@ -99,53 +60,54 @@ body html{
 }
 
 
-/* Design Categories */
-
-.categories {
-	height: 350px;
-	background-color: #B4D6C6;
-}
-
-.categories ul li {
-	text-align: center;
-	list-style-type: none;
-	display: inline;
-}
-
-.categories ul {
-	text-align: center;
-	padding-left: 0px;
-	vertical-align: middle;
-	line-height: 350px;
-}
-
-.categories li {
-	padding: 0px 20px;
-}
-
-.categories a {
-	padding: 100px 100px;
-	color: dimgray;
-	background-position: center;
-	background-size: cover;
-}
-
-
 /* Projects */
 
-.projects {
+.filterDiv {
 	float: left;
+	background-color: #2196F3;
+	color: #ffffff;
 	width: 25%;
+	margin: 0px;
 	padding-bottom: 25%;
-	background-position: center center;
+	line-height: 100px;
+	text-align: center;
+	display: none;
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.show {
+	display: block;
+}
+
+.container {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+}
+
+.btn:hover {
+ 	background-color: #ddd;
+}
+
+.btn.active {
+	background-color: #666;
+	color: white;
+}
+
+
 /* Contact Bar */
 
 .contact-container {
-	background: #1B3440;
+	background: #242842;
 	
 }
 
@@ -153,7 +115,7 @@ body html{
 	padding-left: 100px;
 	padding-right: 120px;
 	list-style-type: none;
-	background: #1B3440;
+	background: #242842;
 	margin: 0px !important;
 }
 
