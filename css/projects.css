@@ -36,6 +36,10 @@ body {
 	width: auto;
 }
 
+#nav-logo strong {
+	color: #fff;
+}
+
 #nav-categories {
 	padding-right: 120px;
 }
@@ -94,8 +98,10 @@ body {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: .5 ease;
-	background-color: rgba(0,0,0,0.0);
+	transition: opacity .2s ease;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+	background-color: rgba(0,0,0,0.5);
 }
 
 .filterDiv:hover .overlay{
@@ -110,6 +116,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	width: 100%;
 }
 
 .lowerText {
@@ -191,4 +198,11 @@ body {
 	padding-left: 15px;
 	text-align: right;
 	float: right;
+}
+
+.social {
+	position: relative;
+	height: 30px;
+	width: auto;
+	top: -3px;
 }
