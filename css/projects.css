@@ -137,6 +137,7 @@ body {
 	margin-top: 20px;
 	overflow: hidden;
 	height: 100%;
+	padding-bottom: 74px;
 }
 
 .btn {
@@ -160,8 +161,9 @@ body {
 /* Contact Bar */
 
 .contact-container {
-	padding-top: 25px;
-	padding-bottom: 25px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
 
 .contact {
@@ -170,6 +172,8 @@ body {
 	list-style-type: none;
 	background: #242842;
 	margin: 0px !important;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .contact ul a {
