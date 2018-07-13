@@ -68,21 +68,58 @@ body {
 }
 
 
-/* Project Buttons */
+/* Projects */
 
 .filterDiv {
 	float: left;
-	background-color: #242842;
-	color: #ffffff;
 	width: 25%;
 	margin: 0px;
-	padding-bottom: 25%;
-	line-height: 100px;
-	text-align: center;
+	background-color: #9E1F21;
+	position: relative !important;
 	display: none;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5 ease;
+	background-color: rgba(0,0,0,0.0);
+}
+
+.filterDiv:hover .overlay{
+	opacity: 1;
+}
+
+.text {
+	color: #fff;
+	font-size: 15px;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.lowerText {
+	color: #fff;
+	font-size: 10px;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .show {
@@ -92,6 +129,7 @@ body {
 .container {
 	margin-top: 20px;
 	overflow: hidden;
+	height: 100%;
 }
 
 .btn {
@@ -112,42 +150,9 @@ body {
 }
 
 
-/* Projects */
-
-#unify {
-	background-image: url(../Images/Unify/UNIFY.png);
-	-webkit-transition: background-image 0.5s;
-    transition: background-image 0.5s;
-}
-#unify:hover {
-	background-image: url(../Images/Unify/UNIFY-hover.png);
-}
-
-
-#ta {
-	background-image: url(../Images/TA/TA.png);
-	-webkit-transition: background-image 0.5s;
-    transition: background-image 0.5s;
-}
-#ta:hover {
-	background-image: url(../Images/TA/TA-hover.png);
-}
-
-
-#grimco {
-	background-image: url(../Images/Grimco/GRIMCO.png);
-	-webkit-transition: background-image 0.5s;
-    transition: background-image 0.5s;
-}
-#grimco:hover {
-	background-image: url(../Images/Grimco/GRIMCO-hover.png);
-}
-
-
 /* Contact Bar */
 
 .contact-container {
-	background: #242842;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
