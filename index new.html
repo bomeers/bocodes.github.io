@@ -11,12 +11,15 @@
 	<!-- UIkit JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit-icons.min.js"></script>
+	
+	<!-- Scrollify !-->
+	<script type="text/javascript" src="js/Fullpage/fullpage.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/FullPage/fullpage.css"/>
 </head>
 <body>
 	
 	<!-- Background !-->
 	
-	<div class="uk-position-center" style="height: 100%; width: 100%; margin: 0px; padding: 0px; background: #242842; z-index: -1;"></div>
 	
 	
 	<!-- Navigation Bar !-->
@@ -32,7 +35,7 @@
             <ul>
                 <li><a href="#">CONTACT</a></li>
                 <li><a href="#">ABOUT</a></li>
-                <li><a id="active" href="#">PORTFOLIO</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +44,44 @@
 	
 	<!-- I Am !-->
 	
-	<div class="uk-position-center-left iAm"><strong>I AM A MOTION DESIGNER</strong></div>
+	<div class="uk-position-center-left iAm"><strong>I AM A</strong></div>
+	
+	
+	<!-- Sections !-->
+	
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<strong class="name">GRAPHIC DESIGNER</strong>
+			<img class="image" src="https://secapps.com/images/bounties/placeholder.svg">
+		</div>
+		
+		<div class="section" id="section1">
+			<strong class="name">MOTION DESIGNER</strong>
+			<img class="image" src="https://secapps.com/images/bounties/placeholder.svg">
+		</div>
+		
+		<div class="section" id="section2">
+			<strong class="name">WEB DESIGNER</strong>
+			<img class="image" src="https://secapps.com/images/bounties/placeholder.svg">
+		</div>
+		
+		<div class="section" id="section3">
+			<strong class="name">VIDEO EDITOR</strong>
+			<img class="image" src="https://secapps.com/images/bounties/placeholder.svg">
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+			sectionsColor: ['#242842', '#242842', '#242842', '#242842'],
+			navigation: true,
+			navigationPosition: 'right',
+			loopTop: true,
+        	loopBottom: true
+		});
+	</script>
 	
 	
 	<!-- Contact Info !-->

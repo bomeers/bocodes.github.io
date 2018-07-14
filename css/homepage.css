@@ -78,6 +78,23 @@ body {
 	padding-left: 100px;
 	color: #fff;
 	font-size: 40px;
+	z-index: 99;
+}
+
+.name {
+	position: relative;
+	top: 41px;
+	padding-left: 239px;
+	color: #fff;
+	font-size: 40px;
+	z-index: 99;
+}
+
+.image {
+	position: relative;
+	top: -79px;
+	float: right;
+	padding-right: 200px;
 }
 
 
