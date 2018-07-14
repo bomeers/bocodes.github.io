@@ -23,7 +23,7 @@ body {
 }
 
 #nav-logo {
-	padding-left: 120px;
+	padding-left: 30px;
 }
 
 #nav-logo a{
@@ -41,7 +41,7 @@ body {
 }
 
 #nav-categories {
-	padding-right: 120px;
+	padding-right: 30px;
 }
 
 #nav-categories ul li {
@@ -60,7 +60,7 @@ body {
 }
 
 #nav-categories a:hover {
-	color: #B4D6C6;
+	color: #fff;
 }
 
 #active {
@@ -68,7 +68,7 @@ body {
 }
 
 #active:hover {
-	color: #B4D6C6 !important;
+	color: #fff !important;
 }
 
 
@@ -157,6 +157,10 @@ body {
 	color: white;
 }
 
+.buttonContainer {
+	text-align: center;
+}
+
 
 /* Contact Bar */
 
@@ -167,8 +171,7 @@ body {
 }
 
 .contact {
-	padding-left: 100px;
-	padding-right: 120px;
+	padding-right: 30px;
 	list-style-type: none;
 	background: #242842;
 	margin: 0px !important;
@@ -180,14 +183,15 @@ body {
 	text-decoration: none;
 	color: dimgray;
 	margin: 0px !important;
+	color: #B7B7B7;
 }
 
 .contact ul {
 	margin: 0px !important;
 }
 
-.contact li:hover {
-	color: white;
+.contact a:hover {
+	color: #fff;
 }
 
 .contact-left {

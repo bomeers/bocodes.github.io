@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bo Meers Portfolio - Projects</title>
+	<link rel="shortcut icon" href="Images/Assets/logo.png" type="image/x-icon"/>
+    <link href="css/homepage.css" type="text/css" rel="stylesheet">
+	
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/css/uikit.min.css"/>
+
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.39/js/uikit-icons.min.js"></script>
+</head>
+<body>
+	
+	<!-- Background !-->
+	
+	<div class="uk-position-center" style="height: 100%; width: 100%; margin: 0px; padding: 0px; background: #242842; z-index: -1;"></div>
+	
+	
+	<!-- Navigation Bar !-->
+	
+	<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container navbar" uk-navbar>
+		<div id="nav-logo" class="uk-navbar-left">
+		<a class="uk-navbar-item uk-logo" href="#"><!--img src="Images/Assets/logo.png"/!--><strong>BO MEERS</strong></a>
+		
+		</div>
+		
+        <div id="nav-categories" class="uk-navbar-right">
+            <ul>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a id="active" href="#">PORTFOLIO</a></li>
+            </ul>
+        </div>
+    </nav>
+	</div>
+	
+	
+	<!-- I Am !-->
+	
+	<div class="uk-position-center-left iAm"><strong>I AM A MOTION DESIGNER</strong></div>
+	
+	
+	<!-- Contact Info !-->
+	
+	<div class="contact-container">
+		<div class="contact">
+			<ul>
+				<li class="contact-left"><a href="#">(636)-345-7138</a></li>
+				<li class="contact-left"><a href="#">bmeers5@gmail.com</a></li>
+				<li class="contact-left"><a href="#">Placeholder</a></li>
+				
+				<li class="contact-right"><a href="https://dribbble.com/bodraw" target="blank"><img src="Images/Assets/dribbble.svg" class="social"></a></li>
+				<li class="contact-right"><a href="https://www.pinterest.com/bmeers5/" target="blank"><img src="Images/Assets/pinterest.svg" class="social"></a></li>
+				<li class="contact-right"><a href="https://www.instagram.com/bodraw/" target="blank"><img src="Images/Assets/instagram.svg" class="social"></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- Scripts !-->
+	
+	<script>
+		filterSelection("all")
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("filterDiv");
+		  if (c == "all") c = "";
+		  for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			}
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		  });
+		}
+	</script>
+	
+</body> 
+</html>
