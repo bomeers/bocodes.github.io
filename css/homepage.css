@@ -38,6 +38,8 @@ body {
 
 #nav-logo strong {
 	color: #fff;
+	font-size: 25px;
+	width: 100%;
 }
 
 #nav-categories {
@@ -71,10 +73,19 @@ body {
 	color: #fff !important;
 }
 
+.hamburger {
+	visibility: hidden;
+	position: absolute;
+	top: 23px;
+	right: 40px;
+	z-index: 990;
+}
+
 
 /* I Am */
 
 .iAm {
+	position: relative;
 	padding-left: 100px;
 	color: #fff;
 	font-size: 40px;
@@ -88,6 +99,7 @@ body {
 	color: #fff;
 	font-size: 40px;
 	z-index: 99;
+	padding-bottom: 0px;
 }
 
 .image {
@@ -149,4 +161,59 @@ body {
 	height: 30px;
 	width: auto;
 	top: -3px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1118px) {
+	.image {
+		padding-right: 40px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.hamburger {
+		visibility: visible;
+	}
+	
+	#nav-logo strong {
+	font-size: 35px;
+	}
+	
+	#nav-categories {
+		visibility: hidden;
+	}
+	
+	.iAm {
+		padding-left: 40px;
+		font-size: 35px;
+		padding-bottom: 200px;
+	}	
+	
+	.name {
+		position: relative;
+		top: -30px;
+		padding-left: 165px; 
+		font-size: 35px;
+		z-index: 99;
+	}
+
+	.image {
+		position: relative;
+		top: 0px;
+		float: right;
+	}
+	
+	.contact {
+		position: relative;
+		top: -20px;
+	}
+	
+	.contact-left {
+		display: none;
+	}
+	
+	.social {
+		height: 40px;
+	}
 }
