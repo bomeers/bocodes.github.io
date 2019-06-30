@@ -1,8 +1,3 @@
-.body-container {
-    margin-left: 400px;
-    padding-left: 30px;
-}
-
 .body-title {
     position: absolute;
     top: 100px;
@@ -10,12 +5,43 @@
 
 .body-title h1 {
     font-size: 70px;
+    margin-left: 400px;
+    padding-left: 30px;
 }
 
-.body-content {
-    background-color: rebeccapurple;
+.body-container {
+    height: 100%;
+    min-height: 100%;
+    margin-left: 400px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-.projects {
-    background-color: darkcyan;
+.projects-container {
+    margin-top: 100px;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+    font-size: 36px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.project {
+    transform: skewX(-10deg);
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #BF214B;
+    margin: 10px;
+}
+
+.project p {
+    position: absolute;
+    vertical-align: sub;
+    padding-left: 40px;
+    bottom: 20px;
 }
