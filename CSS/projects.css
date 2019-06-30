@@ -5,14 +5,17 @@
 
 .body-title {
     position: absolute;
-    bottom: 15%;
-    left: 350px;
+    top: 100px;
 }
 
 .body-title h1 {
     font-size: 70px;
 }
 
-#I-am {
-    padding-left: 20px;
+.body-content {
+    background-color: rebeccapurple;
+}
+
+.projects {
+    background-color: darkcyan;
 }

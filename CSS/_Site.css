@@ -3,6 +3,48 @@ html body {
     color: #F2F2F2;
 }
 
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #BF214B;
+    transform: skewX(-10deg);
+    transform-origin: top right;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav h1 {
+    text-align: right;
+    padding: 30px 30px 50px 6px;
+}
+
+.sidenav a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: #0E1C29;
+    background-color: rgb(214, 58, 100);
+}
+
+.nav-link {
+    padding: 6px 30px 6px 6px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 25px;
+    color: #F2F2F2;
+    display: block;
+}
+
+.nav-selected {
+    background-color: rgb(214, 58, 100);
+}
+
 /* Dark blue #0E1C29 */
 /* blue #082334 */
 /* Light blue #042F40 */
