@@ -42,4 +42,102 @@ body, html {
     border: 20px solid #e02254;
 }
 
-/* common breakpoints min: 576px min: 768px	min: 992px min: 1200px */
+@media only screen and (max-width: 600px) {
+    .center-text-wrapper h1{
+        font-size: 1.5rem;
+    }
+
+    .center-text-wrapper h4 {
+        font-size: 1rem;
+    }
+
+    .center-text {
+        font-size: .75rem;
+    }
+
+    .icons {
+        width: 50px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .center-text-wrapper h1{
+        font-size: 1.5rem;
+    }
+
+    .center-text-wrapper h4 {
+        font-size: 1rem;
+    }
+
+    .center-text {
+        font-size: .75rem;
+    }
+
+    .icons {
+        width: 50px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .center-text-wrapper h1{
+        font-size: 2rem;
+    }
+
+    .center-text-wrapper h4 {
+        font-size: 1.2rem;
+    }
+
+    .center-text {
+        font-size: .75rem;
+    }
+
+    .icons {
+        width: 60px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .center-text-wrapper h1{
+        font-size: 2.5rem;
+    }
+
+    .center-text-wrapper h4 {
+        font-size: 1.5rem;
+    }
+
+    .center-text {
+        font-size: 1rem;
+    }
+
+    .icons {
+        width: 70px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .center-text-wrapper h1{
+        font-size: 2.5rem;
+    }
+
+    .center-text-wrapper h4 {
+        font-size: 1.5rem;
+    }
+
+    .center-text {
+        font-size: 1rem;
+    }
+
+    .icons {
+        width: 70px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
